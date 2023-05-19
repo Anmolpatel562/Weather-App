@@ -1,0 +1,204 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Assistant', sans-serif;
+     overflow-y: hidden;
+}
+:root{
+     --colorDark1: #112D4E;
+     --colorDark2:  #3F72AF;
+     --colorLight1: #DBE2EF;
+     --colorLight2: #F9F7F7;
+}
+.tab.current-tab {
+     background-color: rgba(219,226,239,0.5);
+     border-radius: 4px;
+  
+} 
+
+.wrapper{
+     width: 100vw;
+     height: 100vh;
+     background-image: url(realbg.jpg);
+     background-size: cover;
+}
+h1{
+     text-align: center;
+     text-transform: uppercase;
+     padding: 5px;
+     letter-spacing: 1px;
+     color:white;
+}
+.tab-container{
+     width: 90%;
+     max-width : 650px;
+     margin: 0 auto;
+     margin-top: 1rem;
+     display: flex;
+     justify-content: space-between;
+     
+}
+.tab{
+     padding-left: 10px;
+     padding-right: 10px;
+     cursor: pointer;
+     font-size: 1.2rem;
+     letter-spacing: 1px;
+}
+.weather-container{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     margin-top: 1rem;
+}
+.btn{
+     all: unset;
+     color: white;
+     background-color: var(--colorDark2);
+     font-size: 0.85rem;
+     text-transform: uppercase;
+     border-radius: 5px;
+     cursor: pointer;
+     padding: 5px 25px;
+     margin-bottom: 15px;
+}
+.sub-container{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+ .grant-location-container{
+     display: none;
+}
+.grant-location-container.active{
+     display: flex;   
+} 
+.grant-location-container img{
+     margin-bottom: 0.85rem; 
+}
+.grant-location-container p:first-of-type{
+     font-size: 1.5rem;
+     font-weight: 600;
+     letter-spacing: 2px;
+}
+.grant-location-container p:last-of-type{
+   font-size: 1.2rem; 
+   font-weight: 500;
+   margin-top: 0.5rem;
+   margin-bottom: 1rem;
+   letter-spacing: 0.75px;
+}
+.loading-container{
+     display: none;
+}
+.loading-container.active{
+     display: flex;
+}
+.loading-container p{
+     text-transform: uppercase;
+}
+.user-info-container{
+     display: none;
+}
+.user-info-container.active{
+     display: flex;
+}
+.name{
+     display: flex;
+     align-items: center;
+     gap: 0 1rem;
+}
+.name div{
+     font-size: 1.6rem;
+     text-transform: uppercase;
+     color: white;
+}
+.name img{
+     width: 25px;
+     height: 20px;
+}
+.desc{
+     color: white;
+     font-size: 1.2rem;
+     font-weight: 200;
+     text-transform: uppercase;
+     margin-top: 15px;
+}
+.descIcon{
+   margin-top: -15px;
+     width: 90px;
+     height: 90px;
+}
+.temp{
+     background-color:rgba(0, 0, 0, 0.5);
+     border-radius: 10px;
+     padding-left: 10px;
+     padding-right: 10px;
+     font-size: 2.5rem;
+     font-weight: 700;
+     margin-bottom: 5px;
+     color: white;
+}
+.parameter-container{
+     display: flex;
+     gap: 10px 8rem;
+     margin-top: 2rem;
+}
+.parameter{
+     width: 90%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     background-color: rgba(0, 0, 0, 0.5);
+     border-radius: 4px;
+     width: 140px;
+     max-width: 200px;
+     height: 140px;
+     color: white;
+     font-size: 1.3rem;
+     gap: 0.2rem;
+     letter-spacing: 1px;
+     text-transform:uppercase ;
+}
+.form-container{
+     display: none;
+     width: 90%;
+     max-width: 550px;
+     margin: 0 auto;
+     justify-content: center;
+     align-items: center; 
+     gap: 0 10px;
+     margin-bottom: 2rem;
+}
+.form-container.active{
+     display: flex;
+}
+.form-container input{
+    
+     width: calc(100% - 80px);
+     height: 40px;
+     padding: 0 20px;
+     background-color: rgba(219,226,239,0.5);
+     border-radius: 10px;
+     border:1px  rgba(219,226,239,0.5);
+}
+.form-container input::placeholder{
+     color: black;
+}
+.form-container button{
+     padding: unset;
+   width: 40px;
+   height: 40px;
+   display: flex;
+   align-items: center;
+   justify-items: center;
+   margin-top: 15px;
+   border-radius: 100%;
+}
+.form-container button img{
+   margin-left: 7px;
+   margin-bottom: 2px;
+}
